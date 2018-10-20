@@ -1,0 +1,19 @@
+.row{
+    padding-top: 2%;
+}
+.divider{
+    border: 1px solid;
+}
+.loginform{
+    padding-top: 2%;
+}
+input{
+    border-radius: 5px;/*Need to Beautify*/
+}
+.register{
+    border: 2ps solid !important;
+    padding-top: 2%;
+}
+.registrationform{
+    justify-content: left
+}

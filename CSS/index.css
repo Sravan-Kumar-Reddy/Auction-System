@@ -1,0 +1,22 @@
+:root{
+        font : 20px;
+}
+table{
+        border-radius: 10px;        
+        border:2px solid red;
+        margin: 20px;
+        /*background: green;*/
+}
+.nav-link{
+        color: #000 !important;
+}
+
+footer{
+        background-color: #000;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 2%;
+
+}
