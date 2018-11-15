@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+</head>
+
+<body>
+    <div id="root" style="padding:10px">
+        <form action="">
+            Item Name:<input type="text" name="item-name" placeholder="Search"><br><br>
+            Item Catagory:<input type="text" name="item-catagory" placeholder="Catagory"><br><br>
+            Item Cost:<input type="text" name="item-cost" placeholder="Cost"><br><br>
+
+        </form>
+
+        <form id="app" @submit="checkForm" action="https://vuejs.org/" method="post" novalidate="true">
+
+            <p v-if="errors.length">
+                <b>Please correct the following error(s):</b>
+                <ul>
+                    <li v-for="error in errors">{{ error }}</li>
+                </ul>
+            </p>
+
+            <p>
+                <label for="name">Name</label>
+                <input id="name" v-model="name" type="text" name="name">
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input id="email" v-model="email" type="email" name="email">
+            </p>
+
+            <p>
+                <label for="cost">Cost</label>
+                <input id="cost" v-model="cost" type="number" name="cost">
+            </p>
+
+            <p>
+                <label for="name">Catagory</label>
+                <input id="catagory" v-model="catagory" type="text" name="catagory">
+            </p>
+
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+
+
+
+        </form>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
